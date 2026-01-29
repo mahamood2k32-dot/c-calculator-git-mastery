@@ -7,7 +7,7 @@ int main()
 	int a, b;
 	char op;
 
-	printf("Enter '+' or '-'  operator\n");
+	printf("Enter '+' or '-' or '/'  operator\n");
 
 	scanf("%c",&op);
 	
@@ -22,6 +22,13 @@ int main()
 	else if(op == '-')
 	{
 		printf("\nResult = %d\n", a-b);
+	}
+	else if(op == '/')
+	{
+		if(b != 0)
+			printf("\nResult = %d\n", a / b);
+		else
+			printf("\nError !,Division by zero.\n");
 	}
 	else
 	{
